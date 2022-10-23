@@ -31,7 +31,7 @@
 ![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/MitAbhay/hinna-henna?style=for-the-badge&color=blue)
 ![GitHub language count](https://img.shields.io/github/languages/count/MitAbhay/hinna-henna?style=for-the-badge&color=brightgreen)
 <br><br>
-## Our Contributors
+## Our Contributors 123
 <a href="https://github.com/MitAbhay/hinna-henna/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=MitAbhay/hinna-henna" />
 </a>
