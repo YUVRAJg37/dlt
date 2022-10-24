@@ -1,11 +1,19 @@
-name: Close-label
 on:
-- pull-request
+  pull_request_target:
+    types:
+      - closed
+  pull_request:
+    types:
+      - closed
 
 jobs:
-  triage:
+  label:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - uses: logerfo/close-label@0.0.4
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+      # https://github.com/marketplace/actions/pr-labeler-based-on-multiple-rules
+      - uses: srvaroa/labeler@v0.8
+        with:
+          config_path: .github/labeler_config.yml
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
